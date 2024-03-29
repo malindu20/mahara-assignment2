@@ -11,7 +11,7 @@ steps:
     args:
       - '-c'
       - |
-        gcloud compute instances update-container vm-container \
+        gcloud compute instances update-container mahara-instance \
           --container-image us-central1-docker.pkg.dev/myproject-406204/my-repo/flaskapp:${COMMIT_SHA} \
           --zone us-central1-a
 options:
